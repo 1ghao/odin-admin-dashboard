@@ -36,3 +36,23 @@ img {
   display: block;
   max-inline-size: 100%;
 }
+
+body {
+  display: grid;
+  grid-template: 1fr 4fr/ 1fr 4fr;
+  height: 100vh;
+}
+
+header {
+  background-color: aliceblue;
+  grid-column: 2 / -1;
+}
+
+nav {
+  background-color: #2d3943;
+  grid-row: 1 / -1;
+}
+
+.mainContainer {
+  background-color: antiquewhite;
+}
