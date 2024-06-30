@@ -42,7 +42,6 @@ img {
 body {
   display: grid;
   grid-template: 1fr 4fr / 1fr 5fr;
-  height: 100vh;
 }
 
 header {
@@ -128,6 +127,8 @@ header .actions button {
 
 nav {
   position: sticky;
+  top: 0;
+  height: 100vh;
   background-color: #2d3943;
   grid-row: 1 / -1;
   display: flex;
