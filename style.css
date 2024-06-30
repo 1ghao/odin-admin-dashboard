@@ -46,7 +46,7 @@ body {
 }
 
 header {
-  padding: 30px 50px;
+  padding: 0 50px;
   background-color: #2d87d3;
   grid-column: 2 / -1;
   color: #f0f0f0;
@@ -79,7 +79,7 @@ header .row .profile {
   gap: 10px;
 }
 
-header .row .profile .icon {
+header .icon {
   filter: invert(1);
 }
 
@@ -169,6 +169,7 @@ nav > .container > .row img {
 .mainContainer {
   background-color: #f0f0f0;
   display: grid;
+  gap: 40px;
   grid-template-columns: 3fr 1fr;
   padding: 30px 50px;
 }
@@ -190,6 +191,7 @@ nav > .container > .row img {
   background-color: #ffffff;
   border-left: 10px solid #1fd78d;
   border-radius: 30px;
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.164);
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -217,4 +219,37 @@ img.visible {
 
 img.share {
   content: url(assets/icons/share-outline.svg);
+}
+
+.mainContainer > .container:nth-child(2) h3 {
+  color: #2d87d3;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.mainContainer > .container:nth-child(2) > .container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 3px 2px 4px 0px rgba(0, 0, 0, 0.164);
+  padding: 10px 30px 30px;
+}
+
+.mainContainer > .container:nth-child(2) > .container .announcement {
+  display: block;
+  height: 50px;
+  width: 300px;
+}
+
+.mainContainer > .container:nth-child(2) > .container h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 20px 0 10px;
+}
+
+.mainContainer > .container:nth-child(2) > .container p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
+  color: #646c74;
 }
