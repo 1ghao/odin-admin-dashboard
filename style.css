@@ -109,7 +109,7 @@ header .actions button {
   border-radius: 20px;
   background-color: #1fd78d;
   color: #f0f0f0;
-  font-weight: 500;
+  font-weight: 600;
   padding: 10px;
 }
 
@@ -167,5 +167,54 @@ nav > .container > .row img {
 }
 
 .mainContainer {
-  background-color: antiquewhite;
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 30px 50px;
+}
+
+.mainContainer > .container:first-child h3 {
+  color: #2d87d3;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mainContainer > .container:first-child > .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.mainContainer > .container:first-child > .container > .card {
+  background-color: #ffffff;
+  border-left: 10px solid #1fd78d;
+  border-radius: 30px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer > .container:first-child > .container h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.mainContainer > .container:first-child > .container .row {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+img.favorite {
+  content: url(assets/icons/star-plus-outline.svg);
+}
+
+img.visible {
+  content: url(assets/icons/eye-check-outline.svg);
+}
+
+img.share {
+  content: url(assets/icons/share-outline.svg);
 }
